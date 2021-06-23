@@ -1,0 +1,33 @@
+@import "colors";
+
+$futura : futura-pt, sans-serif;
+
+$light : 400;
+$bold : 500;
+
+
+h1 {
+    font-family: $futura;
+    font-weight: $bold;
+    font-style: italic;
+    font-size: 3rem;
+    color: white;
+}
+h3 {
+    font-family: $futura;
+    font-style: italic;
+    font-size: 2.5rem;
+    color: $mainPink;
+}
+
+p {
+    font-family: $futura;
+    font-size: $bold;
+    font-style: normal;
+    font-size: 2rem;
+    color: white;
+}
+
+i {
+    font-size: 4rem;
+}

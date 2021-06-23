@@ -1,0 +1,53 @@
+#nav {
+    display: flex;
+    justify-content: space-between;
+}
+.menu-btn {
+    margin-right: 10px;
+    margin-top: 16px;
+}
+#name {
+    margin: 10px 0 0 10px;
+}
+
+#mainTitle {
+    margin: 50px 0 0 0;
+    text-align: center;
+}
+
+#aboutDiv {
+    text-align: center;
+    padding: 50px;
+}
+
+.techContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    opacity: 100%;
+}
+
+.skill {
+    background: $mainPink;
+    border-radius: 50px;
+    padding: 5px 10px 5px 10px ;
+}
+
+#socialIcons {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15%;
+}
+
+.fa-linkedin-in {
+    margin: 0 40px;
+}
+
+
+
+@media (max-width: 500px) {
+
+}
