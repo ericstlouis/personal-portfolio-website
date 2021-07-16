@@ -50,6 +50,36 @@ top: 22%;
 	flex-wrap: wrap;
 }
 
+.img1 {
+	background: #FF4D5a;
+background: -webkit-linear-gradient(to top, #FF4D5a 0%, #020202 100%);
+background: -moz-linear-gradient(to top, #FF4D5a 0%, #020202 100%);
+background: linear-gradient(to top, #FF4D5a 0%, #020202 100%);
+}
+
+.img2 {
+	background: #fff;
+background: -webkit-linear-gradient(to top, #fff 0%, #FF4D5A 100%);
+background: -moz-linear-gradient(to top, #fff 0%, #FF4D5A 100%);
+background: linear-gradient(to top, #fff 0%, #FF4D5A 100%);
+}
+
+.img3 {
+	background: #CC24FF;
+background: -webkit-linear-gradient(to top, #CC24FF 0%, #FF4D5A 100%);
+background: -moz-linear-gradient(to top, #CC24FF 0%, #FF4D5A 100%);
+background: linear-gradient(to top, #CC24FF 0%, #FF4D5A 100%);
+
+}
+
+.projecttitle {
+	color: #000;
+}
+
+.projecttexts {
+	color: #000;
+}
+
 .image{
 	position: relative;
 	flex: 1;
