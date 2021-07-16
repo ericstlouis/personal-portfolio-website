@@ -725,6 +725,32 @@ button a:focus span:nth-child(6) {
       flex-wrap: wrap;
 }
 
+.img1 {
+  background: #FF4D5a;
+  background: -webkit-gradient(linear, left bottom, left top, from(#FF4D5a), to(#020202));
+  background: linear-gradient(to top, #FF4D5a 0%, #020202 100%);
+}
+
+.img2 {
+  background: #fff;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#FF4D5A));
+  background: linear-gradient(to top, #fff 0%, #FF4D5A 100%);
+}
+
+.img3 {
+  background: #CC24FF;
+  background: -webkit-gradient(linear, left bottom, left top, from(#CC24FF), to(#FF4D5A));
+  background: linear-gradient(to top, #CC24FF 0%, #FF4D5A 100%);
+}
+
+.projecttitle {
+  color: #000;
+}
+
+.projecttexts {
+  color: #000;
+}
+
 .image {
   position: relative;
   -webkit-box-flex: 1;
