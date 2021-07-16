@@ -1,53 +1,51 @@
-#nav {
+@import "colors";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: $background;
+    line-height: 1.6;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+
+.navBar {
     display: flex;
     justify-content: space-between;
-}
-.menu-btn {
-    margin-right: 10px;
-    margin-top: 16px;
-}
-#name {
-    margin: 10px 0 0 10px;
+    // position: -webkit-sticky;
+    // position: sticky;
+    margin-top: 1.1rem;
 }
 
-#mainTitle {
-    margin: 50px 0 0 0;
-    text-align: center;
-}
-
-#aboutDiv {
-    text-align: center;
-    padding: 50px;
-}
-
-.techContainer {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 10px;
-    opacity: 100%;
-}
-
-.skill {
-    background: $mainPink;
-    border-radius: 50px;
-    padding: 5px 10px 5px 10px ;
-}
-
-#socialIcons {
-    width: 100%;
-    bottom: 0;
+.stickyContainer {
+    z-index: 2;
     position: absolute;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 15%;
-}
-
-.fa-linkedin-in {
-    margin: 0 40px;
-}
-
-
-
-@media (max-width: 500px) {
+    right: 0;
+    left: 0;
+    top: 1.1rem;
 
 }
+
+.homeContent {
+    position: absolute;
+    top: 10%;
+    margin: 11rem 3rem auto 10rem;
+}
+

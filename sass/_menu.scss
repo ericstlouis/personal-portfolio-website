@@ -1,62 +1,134 @@
 @import "colors";
 
-.menu-btn {
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
+
+.menu,
+.menuExit {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 20px;
+    width: 2.5rem;
+    margin: 0.7rem 3rem 0 4rem;
+    font-size:1.3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
     cursor: pointer;
-    transition: all .5s ease-in-out;
-    line-height: 1px;
+    z-index: 6;
+
 }
 
-.menu-Btn_burger {
-    width: 30px;
-    height: 3px;
-    background: $mainText;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255,101,47,.2) ;
-    transition: all .5s ease-in-out;
-}
-
-.menu-Btn_burger::before,
-.menu-Btn_burger::after {
-    content: '';
+.menu::before,
+.menu::after {
+    margin: 0;
     position: absolute;
-    width: 30px;
-    height: 3px;
-    background: $mainText;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255,101,47,.2) ;
-    transition: all .5s ease-in-out;
-
+    transition: 0.4s ease;
+    opacity: 0;
+    pointer-events: none;
 }
 
-.menu-Btn_burger::before {
-    transform: translateY(10px);
+.menu:before {
+    content: "N";
+    top: -60px;
+    left: 35px;
+}    
+
+.menu:after {
+    content: "M \00a0\00a0 \00a0 \00a0 \00a0 \00a0 U";
+    width: 200px;
+    left: -40%;
+    top: 50px;
+    
 }
 
-.menu-Btn_burger::after {
-    transform: translateY(-10px)
+
+.menu:hover::before,
+.menu:hover::after {
+    top: -4.3px;
+    opacity: 1;
+    transition: 0.2s ease, opacity 0.17s 0.03s ease-in;
 }
 
-
-// animation
-
-.menu-btn.open .menu-Btn_burger {
-    transform: translateX(-50px);
-    background: transparent;
-    box-shadow: none;
+.bar {
+    width: 50%;
+    height: 0.2px;
+    background: white;
+    margin: 0 auto 7.9px;
+    transition: transform 0.4s ease;
 }
 
-.menu-btn.open .menu-Btn_burger::before {
-    transform: rotate(45deg) translate(35px, -35px);
-    background: $mainPink;
+//slide menu exit button
+
+.menuExit::before,
+.menuExit::after {
+    position: absolute;
+    transition: 0.4s ease;
+    opacity: 0;
+    pointer-events: none;
 }
 
-.menu-btn.open .menu-Btn_burger::after {
-    transform: rotate(-45deg) translate(35px, 35px);
-    background: $mainPink;
+.menuExit:before {
+    content: "E \00a0 \00a0 \00a0  \00a0T";
+    top: -60px;
+    left: -100%;
+    width: 215px;
 }
+
+.menuExit:after {
+    content: "I";
+    top: 50px;
+    left: 96%;
+}
+
+.menuExit:hover::before,
+.menuExit:hover::after {
+    top: -4.3px;
+    opacity: 1;
+    transition: 0.2s ease, opacity 0.17s 0.03s ease-in;
+}
+/* slide nav */
+
+
+.sidenav {
+  font-family: 'Josefin Sans', sans-serif;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 120px;
+    text-align:center;
+  }
+  
+  .sidenav a {
+    text-decoration: none;
+    font-size: 25px;
+    color: $mainPink;
+    display: block;
+    transition: 0.3s;
+  
+  }
+  
+  .sidenav a:hover{
+    color: #f1f1f1;
+  }
+
+  .menuitem {
+    padding: 5% 8px 5% 32px;
+}
+
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 1%;
+    right: 25px;
+    font-size: 4rem;
+    margin: 0 1% 0 0;
+    }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+

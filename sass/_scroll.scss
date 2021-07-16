@@ -1,0 +1,70 @@
+@import "colors";
+
+// snap scrolling
+.mainContainer {
+    margin: 0;
+    min-width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+ 
+
+
+section {
+  position: relative;
+    min-width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+
+// remove x & y axis scroll bars
+.mainContainer {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.mainContainer::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+
+// vertical slider
+nav {
+  display: flex;
+  position: absolute;
+  height: 100vh;
+  left: 95%;
+}
+
+
+nav .container ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+nav .container ul li {
+  width: 8px;
+  height: 8px;
+  margin: 15px;
+
+}
+
+nav .container ul li a {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  display: block;
+}
+
+nav .container ul li.active {
+  border-radius: 50%;
+  background-color: $mainPink;
+}

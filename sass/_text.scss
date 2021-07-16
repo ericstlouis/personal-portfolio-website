@@ -1,33 +1,114 @@
 @import "colors";
 
-$futura : futura-pt, sans-serif;
 
-$light : 400;
-$bold : 500;
-
-
-h1 {
-    font-family: $futura;
-    font-weight: $bold;
-    font-style: italic;
-    font-size: 3rem;
-    color: white;
-}
-h3 {
-    font-family: $futura;
-    font-style: italic;
-    font-size: 2.5rem;
+.name {
+    font-family: 'Josefin Sans', sans-serif;
     color: $mainPink;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    font-style: italic;
 }
+
+.name2 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: $mainPink;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    font-style: italic;
+    position: relative;
+    top: 4%;
+}
+
+
 
 p {
-    font-family: $futura;
-    font-size: $bold;
-    font-style: normal;
-    font-size: 2rem;
+    color: $grey;
+}
+
+h3 {
     color: white;
 }
 
-i {
-    font-size: 4rem;
+span {
+    color: white;
 }
+
+.socialIcons {
+    z-index: 3 ;
+    position: absolute;
+    margin-left: 1rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.stickyIcons {
+    position: sticky;
+}
+
+.fab {
+    color: $mainPink;
+    font-size: 2rem;
+}
+
+.fab:hover {
+    color: $hotPink;
+}
+
+.fa-linkedin-in {
+    margin:3rem 0px 3.1rem;
+}
+
+//home page text
+
+.intro {
+
+    position: absolute;
+    font-family: Futura pt;
+    font-size: 1.1rem;
+    color: white;
+    display: block;
+}
+
+
+.relativeName {
+    position: relative;
+}
+
+.quickIntro {
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.3rem;
+    position: relative;
+    bottom: 1.5rem;
+    top: 0.1rem;
+}
+
+.madeitheading {
+    font-family: futura-pt, sans-serif;
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+
+.madeittext {
+    font-family: futura-pt, sans-serif;
+    font-size: 1.3rem;
+  }
+
+
+h4 {
+    letter-spacing: 4px;
+}
+
+.talkBtn {
+    background: $mainPink;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.occu {
+    color: $mainPink
+}
+
