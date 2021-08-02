@@ -1746,6 +1746,7 @@ h2 {
 
 .projectbody {
   overflow: scroll;
+  overflow-x: hidden;
   font-family: futura-pt, sans-serif;
   color: white;
 }
