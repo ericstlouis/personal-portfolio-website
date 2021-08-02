@@ -1,0 +1,116 @@
+@import "colors";
+
+.projectbody {
+    overflow: scroll ;
+    font-family: futura-pt, sans-serif; 	
+	color: white;
+}
+
+.projectWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mainProject {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 5%;
+}
+
+.projectTitle {
+	font-size: 3rem;
+}
+
+.projectText {
+	font-size: 1.3rem;
+}
+
+.visitBtn {
+	color: white;
+	padding: 10px;
+	background-color: $mainPink;
+}
+
+.visitBtn:hover {
+	background-color: rgba(255,255,255,1);
+	color: black;
+}
+
+// slider css
+
+
+hr {
+	width: 70vw;
+}
+
+.detailPara {
+	width: 60ch;
+	font-size: 1.3rem;
+}
+
+.carousel {
+  margin: 20px 0;
+  width: 60vw;
+  height: 50vh;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  
+  &:hover .controls {
+    opacity: 1;
+  }
+  
+  .controls {
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 99999;
+    transition: all ease 0.5s;
+    
+    .control {
+      margin: 0 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.7);
+      opacity: .5;
+      transition: ease .3s;
+      cursor: pointer;
+      
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  
+    .slides {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      display: flex;
+      width: 100%;
+      transition: 1s ease-in-out all;
+      
+      .slide {
+        min-width: 100%;
+        min-height: 250px;
+        height: auto;
+      }
+    }
+}
+
+.visitBtn {
+	top: 0;
+}

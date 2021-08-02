@@ -1743,4 +1743,146 @@ h2 {
     opacity: 0;
   }
 }
+
+.projectbody {
+  overflow: scroll;
+  font-family: futura-pt, sans-serif;
+  color: white;
+}
+
+.projectWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainProject {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5%;
+}
+
+.projectTitle {
+  font-size: 3rem;
+}
+
+.projectText {
+  font-size: 1.3rem;
+}
+
+.visitBtn {
+  color: white;
+  padding: 10px;
+  background-color: #FF4D5A;
+}
+
+.visitBtn:hover {
+  background-color: white;
+  color: black;
+}
+
+hr {
+  width: 70vw;
+}
+
+.detailPara {
+  width: 60ch;
+  font-size: 1.3rem;
+}
+
+.carousel {
+  margin: 20px 0;
+  width: 60vw;
+  height: 50vh;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.carousel:hover .controls {
+  opacity: 1;
+}
+
+.carousel .controls {
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  z-index: 99999;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.carousel .controls .control {
+  margin: 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: .5;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+  cursor: pointer;
+}
+
+.carousel .controls .control:hover {
+  opacity: 1;
+}
+
+.carousel .slides {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-transition: 1s ease-in-out all;
+  transition: 1s ease-in-out all;
+}
+
+.carousel .slides .slide {
+  min-width: 100%;
+  min-height: 250px;
+  height: auto;
+}
+
+.visitBtn {
+  top: 0;
+}
 /*# sourceMappingURL=main.css.map */
