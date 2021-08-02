@@ -1793,8 +1793,7 @@ h2 {
 }
 
 .visitBtn:hover {
-  background-color: white;
-  color: black;
+  background-color: #020202;
 }
 
 hr {
