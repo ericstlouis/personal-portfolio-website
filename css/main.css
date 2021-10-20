@@ -726,21 +726,18 @@ button a:focus span:nth-child(6) {
 }
 
 .img1 {
-  background: #FF4D5a;
-  background: -webkit-gradient(linear, left bottom, left top, from(#FF4D5a), to(#020202));
-  background: linear-gradient(to top, #FF4D5a 0%, #020202 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#b1e5f9), to(#f4d2fe));
+  background: linear-gradient(90deg, #b1e5f9, #f4d2fe);
 }
 
 .img2 {
-  background: #fff;
-  background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#FF4D5A));
-  background: linear-gradient(to top, #fff 0%, #FF4D5A 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f3cbab), to(#feedca));
+  background: linear-gradient(180deg, #f3cbab, #feedca);
 }
 
 .img3 {
-  background: #CC24FF;
-  background: -webkit-gradient(linear, left bottom, left top, from(#CC24FF), to(#FF4D5A));
-  background: linear-gradient(to top, #CC24FF 0%, #FF4D5A 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#dbb4f3), to(#efb7d7));
+  background: linear-gradient(180deg, #dbb4f3, #efb7d7);
 }
 
 .projecttitle {
