@@ -67,12 +67,11 @@ background: linear-gradient(90deg,#b1e5f9,#f4d2fe);
 180deg,#dbb4f3,#efb7d7)
 }
 
-.img1:hover {
+.image:hover {
 	background: $background;
 	border: 3px solid white;
 	color:white !important
 }
-
 .details:hover > h2, p{
 	color: white;
 }
@@ -81,6 +80,13 @@ background: linear-gradient(90deg,#b1e5f9,#f4d2fe);
 	color: white !important;
 }
 
+.read-more:hover {
+	color: $mainPink !important;
+}
+
+.techStack {
+	color: $mainPink;
+}
 
 .image{
 	position: relative;

@@ -744,7 +744,7 @@ button a:focus span:nth-child(6) {
   background: linear-gradient(180deg, #dbb4f3, #efb7d7);
 }
 
-.img1:hover {
+.image:hover {
   background: #020202;
   border: 3px solid white;
   color: white !important;
@@ -756,6 +756,14 @@ button a:focus span:nth-child(6) {
 
 .read-more {
   color: white !important;
+}
+
+.read-more:hover {
+  color: #FF4D5A !important;
+}
+
+.techStack {
+  color: #FF4D5A;
 }
 
 .image {
