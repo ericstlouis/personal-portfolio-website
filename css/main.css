@@ -730,6 +730,10 @@ button a:focus span:nth-child(6) {
   background: linear-gradient(90deg, #b1e5f9, #f4d2fe);
 }
 
+.details > h2 {
+  color: black;
+}
+
 .img2 {
   background: -webkit-gradient(linear, left top, left bottom, from(#f3cbab), to(#feedca));
   background: linear-gradient(180deg, #f3cbab, #feedca);
@@ -740,12 +744,18 @@ button a:focus span:nth-child(6) {
   background: linear-gradient(180deg, #dbb4f3, #efb7d7);
 }
 
-.projecttitle {
-  color: #000;
+.img1:hover {
+  background: #020202;
+  border: 3px solid white;
+  color: white !important;
 }
 
-.projecttexts {
-  color: #000;
+.details:hover > h2, p {
+  color: white;
+}
+
+.read-more {
+  color: white !important;
 }
 
 .image {
